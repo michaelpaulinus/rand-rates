@@ -5,7 +5,6 @@ import twitterClient from "./services/twitterClient";
 async function postTweet(tweet: string) {
   try {
     await twitterClient.v2.tweet(tweet);
-    console.log(tweet);
   } catch (err) {
     throw err;
   }
