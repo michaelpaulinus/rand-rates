@@ -13,9 +13,7 @@ npm install
 ```
 
 ## Project secrets
-```sh
 Add your secrets in a .env similar to the .env.example
-```
 
 ## Run Project
 
