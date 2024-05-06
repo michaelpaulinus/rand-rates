@@ -22,8 +22,5 @@ jobs:
       - name: "Create env file"
         run: echo "${{secrets.ENV_FILE}}" > .env
 
-      - name: Build TypeScript
-        run: npm run build
-
       - name: Run script
         run: ts-node ./src/main.ts
