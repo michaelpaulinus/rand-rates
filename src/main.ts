@@ -1,8 +1,9 @@
 import moment from "moment";
-import fetchRates from "./services/fetchRates";
+import currencyClient from "./services/currencyClient";
 import twitterClient from "./services/twitterClient";
 
-fetchRates()
+currencyClient
+  .fetchRates()
   .then((response) => {
     const date = response.data.requested_time;
     const rates = response.data.quotes;
@@ -24,7 +25,7 @@ fetchRates()
     `;
 
     twitterClient.v2.tweet(tweet).catch((err) => {
-      console.log("tweet api error: ", err);
+      console.log("twitter api error: ", err);
     });
 
     console.log(tweet);
