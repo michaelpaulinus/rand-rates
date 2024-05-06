@@ -1,8 +1,8 @@
-import type Rates from "./Rates";
+import Quotes from "./Quotes";
 
 export default interface CurrencyResponse {
-  amount: number;
-  base: string;
-  date: string;
-  rates: Rates;
+  endpoint: string;
+  quotes: Quotes[];
+  requested_time: string;
+  timestamp: number;
 }
