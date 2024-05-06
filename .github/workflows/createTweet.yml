@@ -23,4 +23,4 @@ jobs:
         run: echo "${{secrets.ENV_FILE}}" > .env
 
       - name: Run script
-        run: ts-node ./src/main.ts
+        run: npx ts-node ./src/main.ts
