@@ -10,13 +10,13 @@ currencyClient
 
     const tweet = `
     💱${moment(date).locale("en-gb").utcOffset(2).format("llll")}
-    \n💵 1 USD = R${rates
+    \n💵 1 USD ≈ R${rates
       .find((quote) => quote.base_currency === "USD")
       ?.mid.toFixed(2)}
-    \n💶 1 EUR = R${rates
+    \n💶 1 EUR ≈ R${rates
       .find((quote) => quote.base_currency === "EUR")
       ?.mid.toFixed(2)}      
-    \n💷 1 GBP = R${rates
+    \n💷 1 GBP ≈ R${rates
       .find((quote) => quote.base_currency === "GBP")
       ?.mid.toFixed(2)}
     `;
