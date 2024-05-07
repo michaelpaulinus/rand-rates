@@ -14,7 +14,7 @@ class CurrencyClient {
   async fetchRates() {
     try {
       const response = await this.client.get<CurrencyResponse>(
-        `live?currency=USDZAR,GBPZAR,EURZAR,CADZAR&api_key=${process.env.TRADER_MADE_API_KEY}`
+        `live?currency=USDZAR,EURZAR,GBPZAR&api_key=${process.env.TRADER_MADE_API_KEY}`
       );
       return response;
     } catch (err) {

@@ -19,9 +19,6 @@ currencyClient
     \n💷 1 GBP = R${rates
       .find((quote) => quote.base_currency === "GBP")
       ?.mid.toFixed(2)}
-    \n💶 1 CAD = R${rates
-      .find((quote) => quote.base_currency === "CAD")
-      ?.mid.toFixed(2)}
     `;
 
     twitterClient.v2.tweet(tweet).catch((err) => {

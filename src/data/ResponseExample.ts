@@ -12,13 +12,6 @@ const ResponseExample = {
         quote_currency: "ZAR",
       },
       {
-        ask: 23.17009,
-        base_currency: "GBP",
-        bid: 23.16308,
-        mid: 23.16658,
-        quote_currency: "ZAR",
-      },
-      {
         ask: 19.85196,
         base_currency: "EUR",
         bid: 19.84595,
@@ -26,10 +19,10 @@ const ResponseExample = {
         quote_currency: "ZAR",
       },
       {
-        ask: 13.469282,
-        base_currency: "CAD",
-        bid: 13.4687888,
-        mid: 13.4690851,
+        ask: 23.17009,
+        base_currency: "GBP",
+        bid: 23.16308,
+        mid: 23.16658,
         quote_currency: "ZAR",
       },
     ],
