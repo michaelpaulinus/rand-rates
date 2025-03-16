@@ -1,8 +1,8 @@
 import moment from 'moment';
-import currencyClient from './services/currency-client';
-import twitterClient from './services/twitter-client';
+import currencyService from './services/currency-service';
+import twitterClient from './configs/twitter-client';
 
-currencyClient
+currencyService
 	.fetchRates()
 	.then((response) => {
 		const date = response.data.requested_time;
