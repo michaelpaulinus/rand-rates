@@ -2,7 +2,7 @@ name: Create Tweet
 
 on:
   schedule:
-    - cron: "0 10 * * *"
+    - cron: '0 10 * * *'
 
 jobs:
   create-tweet:
@@ -15,13 +15,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: "Create env file"
+      - name: 'Create env file'
         run: echo "${{secrets.ENV_FILE}}" > .env
 
       - name: Run script
-        run: npx ts-node ./src/main.ts
+        run: npm run tweet
